@@ -1,0 +1,11 @@
+---
+layout: hexadecapress:default
+---
+{% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+    <h2 class="archive-year-header">{{ currentdate }}</h2>
+    {% assign date = currentdate %}
+  {% endif %}
+    <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+{% endfor %}

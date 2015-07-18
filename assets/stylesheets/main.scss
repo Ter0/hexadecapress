@@ -1,0 +1,225 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import "base16";
+@import url("//fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro");
+
+// Our variables
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$monospace-font-family: "Source Code Pro", monospace;
+$base-font-size:   15px;
+$small-font-size:  $base-font-size * 0.875;
+$tiny-font-size:   $base-font-size * 0.75;
+$large-font-size:  $base-font-size * 1.125;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       $base02;
+$background-color: white;
+
+// Width of the content area
+$content-width:     640px;
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: $spacing-unit / 2;
+}
+
+/**
+ * Basic styling
+ */
+body {
+    width: 100%;
+    max-width: $content-width;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    text-size-adjust: 100%;
+}
+
+.fa {
+    color: $base03;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+/**
+ * Links
+ */
+a {
+    color: $base0D;
+    text-decoration: none;
+
+    &:visited {
+        color: $base0E;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    border-left: 4px solid $base05;
+    padding-left: $spacing-unit / 2;
+    font-size: $large-font-size;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-family: $monospace-font-family;
+    background-color: $base07;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+footer {
+    font-size: $tiny-font-size;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: $spacing-unit / 2;
+
+    > h1 {
+        margin: 0;
+    }
+
+    >p {
+        margin: 0;
+    }
+
+    > ul {
+        margin: 0;
+
+        > li {
+            margin: 0 $spacing-unit / 4;
+            display: inline;
+            list-style-type: none;
+        }
+    }
+}
+
+.header-icon {
+    transition: color  0.1s linear;
+}
+
+#header-github:hover {
+    color: gray;
+}
+
+#header-twitter:hover {
+    color: #55ACEE;
+}
+
+#header-linkedin:hover {
+    color: #0077B5;
+}
+
+#header-rss:hover {
+    color: #FF6600;
+}
+
+#header-keybase:hover {
+    color: #00bff0
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.archive-year-header {
+    margin-top: $spacing-unit;
+}
+
+.post-list-wrapper {
+    margin-bottom: $spacing-unit;
+}
+
+.post-meta {
+    font-size: $tiny-font-size;
+    margin-bottom: $spacing-unit / 4;
+}

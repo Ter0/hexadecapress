@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        {% css_asset_tag %}
+        {% js_asset_tag %}
+        {% feeds %}
+    </head>
+    <body>
+        <header>
+            <h1>{{ site.title }}</h1>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/archive">archives</a></li>
+                <li><a href="/feed">rss</a></li>
+            </ul>
+            <ul>
+                <li><a target="_blank" href="https://github.com/{{ site.github_username }}"><i id="header-github" class="header-icon fa fa-github-alt fa"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i id="header-twitter" class="header-icon fa fa-twitter fa"></i></a></li>
+                <li><a target="_blank" href="https://uk.linkedin.com/in/{{ site.linkedin_id }}"><i id="header-linkedin"class="header-icon fa fa-linkedin fa"></i></a></li>
+                <li><a target="_blank" href="https://keybase.io/ter0"><i id="header-keybase" class="header-icon fa fa-key fa"></i></a></li>
+            </ul>
+        </header>
+        {{ content }}
+    </body>
+    <footer>
+        <p>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+    </footer>
+</html>

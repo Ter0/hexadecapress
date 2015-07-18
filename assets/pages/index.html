@@ -1,0 +1,10 @@
+---
+layout: hexadecapress:default
+---
+{% for post in site.posts limit:site.index_post_limit %}
+<div class="post-list-wrapper">
+    <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">{{ post.date_html }}</p>
+    {{ post.excerpt | append: '…' }}
+</div>
+{% endfor %}

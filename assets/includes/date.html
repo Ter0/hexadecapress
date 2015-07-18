@@ -1,0 +1,9 @@
+{% assign d = post.date | date: "%d"  %}
+{% case d %}
+  {% when '01' or '21' or '31' %}{{ d }}<sup>st</sup>
+  {% when '02' or '22' %}{{ d }}<sup>nd</sup>
+  {% when '03' or '23' %}{{ d }}<sup>rd</sup>
+  {% else %}{{ d }}<sup>th</sup>
+{% endcase %}
+{{ post.date | date: "%b" }},
+{{ post.date | date: "%Y" }}
