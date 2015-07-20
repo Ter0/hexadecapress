@@ -1,8 +1,11 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+
 @import "base16";
+@import "base16-util";
+@import "syntax-highlighting";
+
 @import url("//fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro");
 
 // Our variables
@@ -184,7 +187,7 @@ header {
 }
 
 .header-icon {
-    transition: color  0.1s linear;
+    transition: color 0.1s linear;
 }
 
 #header-github:hover {

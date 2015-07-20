@@ -26,5 +26,4 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "octopress-ink", "~> 1.1"
   spec.add_runtime_dependency "octopress-date-format", "~> 3.0"
   spec.add_runtime_dependency "octopress-feeds", "~> 2.0"
-  spec.add_runtime_dependency "octopress-autoprefixer", "~> 1.0"
 end

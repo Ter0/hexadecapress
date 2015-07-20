@@ -1,8 +1,8 @@
 require 'hexadecapress/version'
-require 'octopress-autoprefixer'
+require 'octopress-ink'
 require 'octopress-date-format'
 require 'octopress-feeds'
-require 'octopress-ink'
+
 
 Octopress::Ink.add_plugin({
   name:          "Hexadecapress",
