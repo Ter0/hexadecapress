@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Chris Johns"]
   spec.email         = ["hexadecapress@ter0.net"]
 
-  spec.summary       = "A base16 theme for the Octopress Ink framework"
-  spec.description   = "A base16 theme for the Octopress Ink framework"
+  spec.summary       = "An Octopress Ink based theme"
+  spec.description   = "A base16 theme for the Octopress Ink framework, using the base16-ocean variant."
   spec.homepage      = "https://github.com/ter0/hexadecapress"
   spec.license       = "MIT"
 
