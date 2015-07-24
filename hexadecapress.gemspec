@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hexadecapress@ter0.net"]
 
   spec.summary       = "A base16 theme for the Octopress Ink framework"
-  spec.description   = "Not much else to say..."
+  spec.description   = "A base16 theme for the Octopress Ink framework"
   spec.homepage      = "https://github.com/ter0/hexadecapress"
   spec.license       = "MIT"
 
