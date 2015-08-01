@@ -1,6 +1,6 @@
 # Hexadecapress
 
-![https://img.shields.io/gem/v/hexadecapress.svg?style=flat-square]()
+![](https://img.shields.io/gem/v/hexadecapress.svg?style=flat-square)
 
 Hexadecapress is a theme for Jekyll, developed as an Octopress Ink plugin. It uses
 the base16-ocean colour theme.
