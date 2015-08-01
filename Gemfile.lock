@@ -4,7 +4,7 @@ PATH
     hexadecapress (0.1.2)
       octopress-date-format (~> 3.0)
       octopress-feeds (~> 2.0)
-      octopress-ink (~> 1.1)
+      octopress-ink (~> 1.2)
 
 GEM
   remote: https://rubygems.org/
