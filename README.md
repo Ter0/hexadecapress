@@ -1,8 +1,9 @@
 # Hexadecapress
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hexadecapress`. To experiment with that code, run `bin/console` for an interactive prompt.
+![https://img.shields.io/gem/v/hexadecapress.svg?style=flat-square]()
 
-TODO: Delete this and the text above, and describe your gem
+Hexadecapress is a theme for Jekyll, developed as an Octopress Ink plugin. It uses
+the base16-ocean colour theme.
 
 ## Installation
 
@@ -32,7 +33,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hexadecapress.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ter0/hexadecapress.
 
 
 ## License
